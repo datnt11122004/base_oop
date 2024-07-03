@@ -1,0 +1,32 @@
+{
+  "name": "oopts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "prisma": "^5.16.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:deployy": "prisma migrate deploy",
+    "prisma:reset": "prisma migrate reset",
+    "prisma:generate": "prisma generate",
+    "prisma:seed": "tsx prisma/seed.ts",
+    "devServerTs": "tsx watch --trace-warnings src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/type-provider-typebox": "^2.0.1",
+    "@prisma/client": "^5.16.1",
+    "@sinclair/typebox": "^0.24.51",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "tsx": "^4.16.1"
+  }
+}
